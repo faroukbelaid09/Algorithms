@@ -1,0 +1,7 @@
+D:\Courses\Programing-Advice\Projects\Course 23\LinearSearch\Linear Search\bin\Debug\Linear Search.exe.config
+D:\Courses\Programing-Advice\Projects\Course 23\LinearSearch\Linear Search\bin\Debug\Linear Search.exe
+D:\Courses\Programing-Advice\Projects\Course 23\LinearSearch\Linear Search\bin\Debug\Linear Search.pdb
+D:\Courses\Programing-Advice\Projects\Course 23\LinearSearch\Linear Search\obj\Debug\Linear Search.csproj.AssemblyReference.cache
+D:\Courses\Programing-Advice\Projects\Course 23\LinearSearch\Linear Search\obj\Debug\Linear Search.csproj.CoreCompileInputs.cache
+D:\Courses\Programing-Advice\Projects\Course 23\LinearSearch\Linear Search\obj\Debug\Linear Search.exe
+D:\Courses\Programing-Advice\Projects\Course 23\LinearSearch\Linear Search\obj\Debug\Linear Search.pdb
