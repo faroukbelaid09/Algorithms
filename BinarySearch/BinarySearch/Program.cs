@@ -13,7 +13,6 @@ namespace BinarySearch
             int start = 0;
             int end = arr.Length -1;
             
-
             while(start <= end)
             {
                 int middle = start + (end - start) / 2;
@@ -34,6 +33,7 @@ namespace BinarySearch
             }
             return -1;
         }
+        
         static void Main(string[] args)
         {
             int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 ,10};
