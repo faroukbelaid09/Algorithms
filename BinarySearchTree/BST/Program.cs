@@ -79,6 +79,64 @@ namespace BST
             }
         }
 
+        private bool SearchLeft(Node node, int value)
+        {
+            if(node.Left == null) return false;
+            if (node.Left != null && node.Left.Value == value)
+            {
+                return true;
+            }
+           
+            else if (value < node.Left.Value)
+            {
+                return SearchLeft(node.Left, value);
+            }
+            else
+            {
+                return SearchRight(node.Left, value);
+            }
+        }
+
+        private bool SearchRight(Node node, int value)
+        {
+            if(node.Right == null) return false;
+
+            if (node.Right != null && node.Right.Value == value)
+            {
+                return true;
+            }
+            else if (value > node.Right.Value)
+            {
+                return SearchRight(node.Right, value);
+            }
+            else
+            {
+                return SearchLeft(node.Right, value);
+            }
+        }
+
+        public bool Search(int value)
+        {
+            return Search(this.Root, value) != null;
+        }
+
+        private Node Search(Node node, int value)
+        {
+            if(node == null ||  value < node.Value)
+            {
+                return node;
+            }
+
+            else if(value < node.Value) 
+            {
+                return Search(node.Left, value);
+            }
+
+            else
+            {
+                return Search(node.Right, value);
+            }
+        }
         // Method to visually print the tree structure
         public void PrintTree()
         {
@@ -125,6 +183,8 @@ namespace BST
             binarySearchTree.Insert(50);
 
             binarySearchTree.PrintTree();
+
+            Console.WriteLine(binarySearchTree.Search(10));
         }
     }
 }
